@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="timer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: lightcoral;
+            text-align: center;
+            
+            background-color: rgb(161, 94, 116);
+        }
+
+        button {
+            height: 7vh;
+            width: 12vw;
+            font-size: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid lightcoral;
+            color: white;
+            background-color: lightcoral;
+            
+        }
+
+        .div {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: lightcoral;
+            gap: 1rem;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Countdown</h1>
+    <div class="div">
+        <h2 class="hour"></h2>
+        <h2 class="minute"></h2>
+        <h2 class="counts"></h2>
+    </div>
+    <button onclick="start_stop(this)">Start</button>
+    <button onclick="reset()">Reset</button>
+    <audio src="ringtone.mp3" id="audio"></audio>
+    
+
+    <script src="timer.js"></script>
+</body>
+
+</html>
